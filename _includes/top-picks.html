@@ -1,0 +1,22 @@
+<div class="col-sm-12">
+	<h2 class="text-center">Top Picks</h2>
+	{% for card in site.data.topPick.cityCards %}
+		<div class="city_card">
+			<div class="city_card_image" id="city_card_image_{{forloop.index}}" style="background-image:url({{ card.image}})"></div>
+			<div class="city_card_info">
+				<div class="left pr-0">
+					<p class="title">{{ card.city}}</p>
+					<p class="mb-0">
+						{% for i in (1..card.stars) %}
+							<i class="fas fa-star"></i>
+						{% endfor  %}
+						<span class="reviews_count"> {{ .reviewsCount}} reviews</span>
+					</p>
+				</div>
+				<div class="right pl-0">
+					<p class="price"><span class="secondary_color">From </span>${{ card.price}}</p>
+				</div>
+			</div>
+		</div>
+	{% endfor  %}	
+</div>

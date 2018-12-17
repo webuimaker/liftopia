@@ -1,0 +1,1633 @@
+.hide_last_margin {
+    margin-bottom: 0rem!important;
+}
+
+.hide_last_padding {
+    padding-bottom: 0rem!important;
+}
+
+.main {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+h1, h2, h3, h5, h6,
+.h1, .h2, .h3, .h5, .h6 {
+    color: #000;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+}
+
+button,
+.city_card {
+    cursor: pointer;
+}
+
+.z100 {
+    z-index: 100;
+}
+
+.z101 {
+    z-index: 101;
+}
+
+.z102 {
+    z-index: 102;
+}
+
+.z103 {
+    z-index: 103;
+}
+
+.z104 {
+    z-index: 104;
+}
+
+.z105 {
+    z-index: 105;
+}
+
+.zc {
+    z-index: 999;
+}
+
+.zm {
+    z-index: 998;
+}
+
+.regular_font {
+    font-weight: 400!important;
+}
+
+.margin_bottom {
+    margin-bottom: 15px;
+}
+
+.primary_color {
+    color: #0085CA;
+}
+
+.secondary_color {
+    color: #1dcd83;
+}
+
+.add_color {
+    color: #DFDA22;
+}
+
+.underline_blue {
+    box-shadow: inset 0 -0.1em #0085CA;
+}
+
+.hero_container {
+    height: 33vh;
+    min-height: 200px;
+}
+
+.top_separator {
+    height: 33vh;
+    min-height: 200px;
+}
+
+#hero_image {
+    background-image: url("../img/bg_1.png");
+    margin-top: 45px;
+}
+
+.hero_overlay {
+    margin-top: -30px;
+}
+
+.slider_overlay {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 38px;
+    background: #0085CA;
+    text-align: center;
+}
+
+.slider_overlay p {
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0rem;
+    padding-top: 5px;
+}
+
+.mobile_next_line {
+    display: block;
+}
+
+.slider_overlay_gradient {
+    bottom: 38px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background: rgba(0,133,202,0);
+    background: -moz-linear-gradient(top, rgba(0,133,202,0) 0%, rgba(0,133,202,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,133,202,0)), color-stop(100%, rgba(0,133,202,1)));
+    background: -webkit-linear-gradient(top, rgba(0,133,202,0) 0%, rgba(0,133,202,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,133,202,0) 0%, rgba(0,133,202,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,133,202,0) 0%, rgba(0,133,202,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,133,202,0) 0%, rgba(0,133,202,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0085ca', endColorstr='#0085ca', GradientType=0 );
+}
+
+.hero_container,
+.city_card_image,
+.other_experience_image,
+.photo,
+.top_product_bg_container,
+.city_trip_image,
+.sidebar-image,
+#product_image{
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.box,
+.widget_box {
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.box {
+    border-radius: 0px 0px 5px 5px;
+}
+
+.city_page .box,
+.internal_page .box {
+    border-radius: 5px!important;
+}
+
+.city_page,
+.internal_page {
+    padding-top: 30px;
+}
+
+.internal_page h1 {
+    margin-bottom: 1rem;
+}
+
+.widget_box {
+    border-radius: 5px;
+}
+
+.box > .col-sm-12 {
+    border-bottom: 1px solid #eee;
+}
+
+.box > .col-sm-12:last-child {
+    padding-bottom: 30px!important;
+}
+
+.btn_city_container .col-sm-12 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.btn_city_container .btn_city_row {
+    margin: 0 -15px 0px -15px;
+}
+
+.btn_city_container .col-sm-12:last-child .btn_city_row {
+    margin-bottom: 0px;
+}
+
+.btn_city_col {
+    width: 50%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.last_row .btn_city_col:nth-last-child(-n+2) {
+    margin-bottom: 0px!important;
+}
+
+.btn_city {
+    width: 100%;
+    background: #0085CA;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 0px;
+    text-decoration: none;
+}
+
+.btn_city:hover {
+    background-color: #005682;
+    color: #fff!important;
+}
+
+.city_card,
+.review,
+.other_experience {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 5px;
+}
+
+.city_card,
+.other_experience {
+    margin: 0 auto 15px auto;
+    display: block;
+    text-decoration: none;
+}
+
+.city_card,
+.other_experience {
+    overflow: hidden;
+}
+
+.city_card_last {
+    margin: 0 auto!important;
+}
+
+.city_card_image,
+.other_experience_image {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+#city_card_image_1 {
+    background-image: url("../img/city/city_1.png");
+}
+
+#city_card_image_2 {
+    background-image: url("../img/city/city_3.png");
+}
+
+#city_card_image_3 {
+    background-image: url("../img/city/city_4.png");
+}
+
+#other_experience_image_1 {
+    background-image: url("../img/city/city_4.png");
+}
+
+.city_card_image_overlay,
+.other_experience_image_overlay {
+    background: rgb(51, 61, 70);
+    background: -moz-linear-gradient(0deg, rgba(51, 61, 70,1) 0%, rgba(51, 61, 70,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(51, 61, 70,1) 0%, rgba(51, 61, 70,0) 100%);
+    background: linear-gradient(0deg, rgba(51, 61, 70,1) 0%, rgba(51, 61, 70,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="333d46",endColorstr="#333d46",GradientType=1);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+}
+
+.other_experience_container .col-sm-12 {
+    padding-bottom: 0px;
+}
+
+.other_experience:last-child {
+    margin-bottom: 0px;
+}
+
+.other_experience .navy {
+    background: #043777!important;
+}
+
+.other_experience .price {
+    font-size: 2rem;
+    margin-bottom: 0rem;
+}
+
+.other_experience .cu .price {
+    font-size: 2.5rem;
+}
+
+.other_experience .cu .price .secondary_color {
+    font-size: 1.5rem;
+}
+
+.other_experience .cu .price sup {
+    font-size: 1.2rem;
+    top: -.7em;
+}
+
+.other_experience .cu .price sub {
+    font-size: 1.2rem;
+    bottom: 0em;
+    color: #78d1ff;
+}
+
+
+.city_card_info,
+.other_experience_info {
+    background: #333D46;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.city_card_info,
+.other_experience_info {
+    transition: all 0.1s linear;
+}
+
+.city_card_image_overlay {
+    transition: all 0.5s linear;
+}
+
+.other_experience:hover .other_experience_info {
+    background: #1b1e21;
+}
+
+.city_card:hover .city_card_info {
+    background: #1b1e21;
+}
+
+.city_card:hover .city_card_image_overlay {
+    background: rgb(27, 30, 33);
+    background: -moz-linear-gradient(0deg, rgba(27, 30, 33,1) 0%, rgba(27, 30, 33,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(27, 30, 33,1) 0%, rgba(27, 30, 33,0) 100%);
+    background: linear-gradient(0deg, rgba(27, 30, 33,1) 0%, rgba(27, 30, 33,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="1b1e21",endColorstr="#1b1e21",GradientType=1);
+}
+
+
+.city_card_info .left {
+    width: 70%;
+}
+
+.city_card_info .right {
+    width: 30%;
+}
+
+.city_card_info .left,
+.city_card_info .right {
+    padding: 15px;
+}
+
+.city_card_info .right {
+    text-align: right;
+}
+
+.left p {
+    text-align: left;
+}
+
+.city_card_info p {
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0px;
+}
+
+.city_card_info .title,
+.city_card_info .price,
+.other_experience .title,
+.other_experience .price {
+    font-weight: 700;
+}
+
+.other_experience .title {
+    font-size: 1rem;
+}
+
+.city_card_info .title,
+.city_card_info .price{
+    font-size: 1.5rem;
+}
+
+.city_card_info .title {
+    margin-bottom: 1rem;
+}
+
+.city_card_info i,
+.review i,
+.product_main_info .stars i,
+.trip_info_title .stars i {
+    color: #FF8A00;
+}
+
+.city_card_info i {
+    font-size: 10px;
+    transform: translateY(-1px);
+}
+
+.reviews_count {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.reviews_container h2 {
+    text-align: center;
+}
+
+.top_quote,
+.bottom_quote {
+    position: absolute;
+}
+
+.top_quote {
+    top: -25px;
+    left: 12px;
+}
+
+.bottom_quote {
+    bottom: -20px;
+    right: 12px;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.review {
+    background: #F3F3F3;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    margin: 60px auto 0 auto;
+    padding: 0 30px 30px 30px;
+    position: relative;
+    text-align: center;
+}
+
+.testimonials .review:first-of-type {
+    margin-top: 50px;
+}
+
+.testimonials .review:last-of-type {
+    margin-bottom: 20px;
+}
+
+.review .image_container {
+    width: 70px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.review .image_container img {
+    width: 100%;
+    border-radius: 50%;
+    transform: translateY(-35px);
+}
+
+.review h5,
+.review p {
+    margin-bottom: 0px;
+}
+
+.review .stars {
+    margin-bottom: 1.5rem;
+}
+
+.review .content {
+    color: #000
+}
+
+.btn_link_blue,
+.btn_read_more_blue {
+    color: #0085CA;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.widget_box .btn_link_blue {
+    text-decoration: none;
+}
+
+.btn_link_blue:hover,
+.btn_read_more_blue:hover {
+    color: #005682;
+    text-decoration: none;
+}
+
+.btn_link_orange {
+    color: #EE7E43;
+}
+
+.btn_link_orange:hover {
+    color: #A85A30;
+}
+
+.description,
+.resort,
+.btn_link_blue,
+.btn_link_orange {
+    font-size: 1.2rem;
+}
+
+.description {
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+
+.resort {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.accordion,
+.panel {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.accordion {
+    color: #51595E;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 0;
+    position: relative;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: color 0.15s ease-out;
+}
+
+.active, .accordion:hover {
+    color: #0085CA;
+}
+
+.accordion_arrow {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
+.accordion_arrow i {
+    font-size: 2rem;
+}
+
+.arrow_active i {
+    transform: rotate(180deg);
+}
+
+.panel {
+    padding: 0 30px 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.15s ease-out;
+}
+
+.panel p {
+    text-align: left;
+}
+
+.trip_include i,
+.trip_include p {
+    color: #00BC84;
+}
+
+.trip_exclude i,
+.trip_exclude p {
+    color: #7B878E;
+}
+
+.city_card_info,
+.other_experience_info,
+.gallery_container,
+.gallery_half,
+.incentive_list,
+.incentive,
+.trip_info_icon_container,
+.partnership,
+.btn_more_container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.gallery_container {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.gallery_half {
+    width: 100%;
+    height: 260px;
+}
+
+.gallery_half_left {
+    padding: 0 15px 15px 15px;
+}
+
+.photo_full_container {
+    width: 100%;
+    padding: 15px;
+}
+
+.photo_half_container {
+    width: 50%;
+    padding: 15px;
+}
+
+.photo_full_container,
+.photo_half_container {
+    height: 50%
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#photo_1 {
+    background-image: url('../img/bg_3.png');
+}
+
+#photo_2 {
+    background-image: url('../img/bg_2.png');
+}
+
+#photo_3 {
+    background-image: url('../img/bg_4.png');
+}
+
+#photo_4 {
+    background-image: url('../img/bg_1.png');
+}
+
+.pickup_location {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.pickup_location p {
+    color: #51595E;
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+
+.pickup_location .btn_link_blue {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.pickup_location_container {
+    padding-bottom: 30px;
+}
+
+.pickup_location_left,
+.pickup_location_right {
+    padding: 0 15px;
+}
+
+.pickup_location_left {
+    width: 15%;
+}
+
+.pickup_location_right {
+    width: 85%;
+}
+
+.additional_info {
+    padding-left: 1rem;
+    margin-bottom: 0rem;
+    list-style: none;
+}
+
+.additional_info li {
+    color: #7B878E;
+    padding-bottom: 5px;
+}
+
+.additional_info li::before {
+    content: "\2022";
+    color: #0085CA;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+.other_experience_info {
+    padding: 15px;
+}
+
+.other_experience h3,
+.other_experience p {
+    color: #fff;
+}
+
+.other_experience p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.other_experience h3 {
+    margin-bottom: 1rem;
+}
+
+.other_experience .title,
+.other_experience .price {
+    line-height: 1;
+}
+
+.product_main_info {
+    padding-top: 0px!important;
+}
+
+.product_main_info h2 {
+    margin-bottom: 0rem;
+}
+
+.product_main_info .product_description {
+    color: #000;
+    padding-top: 15px;
+    margin-bottom: 2rem;
+}
+
+.product_main_info .links {
+    padding: 0 15px;
+}
+
+.product_main_info .link {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.product_main_info .last_link {
+    padding-right: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+.product_main_info .link span {
+    margin-left: 6px;
+}
+
+.product_main_info .btn_link_blue,
+.btn_read_more_blue {
+    font-size: 1rem;
+}
+
+.top_product_bg_container {
+    background-image: url('../img/bg_1.png');
+    height: 560px;
+    min-height: 550px;
+    padding: 7em 0 5em 0;
+    margin-bottom: 30px;
+}
+
+.incentive_list_container {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.incentive {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.incentive_icon {
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.incentive_icon i {
+    font-size: 22px;
+}
+
+.incentive_text p {
+    font-size: 1rem;
+    margin-bottom: 0rem;
+}
+
+.city_page {
+    padding-top: 30px;
+}
+
+.city_trip_card {
+    width: 100%;
+    min-height: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.city_trip_image_container {
+    width: 100%;
+    min-height: 1px;
+}
+
+.city_trip_image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.city_trip_image .category,
+.product_main_info .category {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 600;
+    text-align: center;
+}
+
+.disabled_offer .category {
+    display: none;
+}
+
+.trending {
+    background: #FF1B52;
+}
+
+.new {
+    background: #00D0FE;
+}
+
+.special {
+    background: #FF540A;
+}
+
+.sell_out {
+    background: #03D062;
+}
+
+.trip_info_price {
+    background: #333D46;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 600;
+    text-align: center;
+}
+
+.trip_info_price sup {
+    font-size: 1rem;
+    top: -0.7em;
+}
+
+.trip_info_price .trip_price {
+    font-size: 2rem;
+}
+
+.trip_info_price sub {
+    font-size: 1rem;
+    bottom: 0em;
+}
+
+#city_trip_image_1,
+#product_image{
+    background-image: url('../img/bg_1.png');
+}
+
+#city_trip_image_2 {
+    background-image: url('../img/city/city_1.png');
+}
+
+#city_trip_image_3 {
+    background-image: url('../img/bg_3.png');
+}
+
+#city_trip_image_4 {
+    background-image: url('../img/city/city_2.png');
+}
+
+.city_trip_info {
+    width: 100%;
+    padding: 15px 15px 0 15px;
+    min-height: 1px;
+}
+
+.trip_info_title,
+.trip_info_description,
+.trip_info_btn_container,
+.trip_info_icon_container {
+    width: 100%;
+}
+
+.trip_info_btn_container {
+    text-align: right;
+}
+
+.trip_info_title {
+    width: 100%;
+}
+
+.trip_info_title h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+}
+
+.trip_info_title .reviews_count {
+    font-size: 1rem;
+}
+
+.trip_info_title,
+.trip_info_description,
+.trip_info_icon_container {
+    margin-bottom: 1rem;
+}
+
+.trip_info_location,
+.trip_info_elevation {
+    width: 100%;
+}
+
+.trip_info_icon_container .btn_link_blue span {
+    margin-left: 3px;
+}
+
+.trip_info_description .btn_link_blue {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.trip_info_description p {
+    color: #000;
+}
+
+.btn_city_trip_card {
+    background-color: #0085CA;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.btn_city_trip_card:hover {
+    color: #fff!important;
+    background-color: #015C8B;
+}
+
+.lift_tickets_container {
+    text-align: center;
+}
+
+.lift_tickets_container h2 {
+    margin-bottom: 0px;
+}
+
+.lift_tickets_container strong {
+    font-weight: 600;
+}
+
+.newsletter p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form_container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form_container input {
+    border: 1px solid #A4A4A4;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    outline: 0px;
+}
+
+.form_container .btn_primary {
+    width: 100%;
+}
+
+.form_container button {
+    margin-bottom: 1rem;
+}
+
+.btn_primary {
+    border-radius: 5px;
+    background: #0085CA;
+    color: #fff!important;
+}
+
+.btn_primary {
+    font-size: 18px;
+}
+
+.btn_primary:hover {
+    background: #015F90;
+    color: #fff!important;
+}
+
+.btn_primary,
+.btn_primary:hover,
+.btn_primary:focus {
+    outline: 0px!important;
+}
+
+.disabled_offer .trending,
+.disabled_offer .new,
+.disabled_offer .special,
+.disabled_offer .sell_out,
+.disabled_offer .trip_info_price,
+.disabled_offer .btn_city_trip_card,
+.disabled_offer .secondary_color,
+.disabled_offer .btn_city {
+    color: #fff!important;
+    background: #8F8F8F!important;
+}
+
+.disabled_offer .btn_link_blue {
+    color: #8F8F8F!important;
+}
+
+.not_available {
+    display: none;
+}
+
+.not_available .col-sm-12 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.not_available p {
+    color: #9B0000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0rem;
+}
+
+.disabled_offer .not_available {
+    display: block;
+}
+/*
+Price Sidebar
+ */
+.pricing_right_sidebar_container {
+    display: none;
+    text-align: center;
+}
+
+.pricing_right_sidebar {
+    padding: 15px!important;
+}
+
+.pricing_right_sidebar_container .sidebar_padding {
+    padding-top: 0px;
+    padding-left: 60px;
+}
+
+.sidebar-image {
+    width: 100%;
+    height: 100px;
+    background-image: url("../img/bg_1.png");
+    display: none;
+}
+
+.sidebar_price_container {
+    margin-bottom: 0.5rem;
+}
+
+.pricing_right_sidebar h3 {
+    margin-bottom: 1rem;
+}
+
+.pricing_right_sidebar .starting {
+    color: #EE7E43;
+    margin-bottom: 0rem;
+}
+
+.pricing_right_sidebar h3,
+.pricing_right_sidebar .starting {
+    font-size: 1rem;
+}
+
+.sidebar_fixed_top {
+    position: sticky!important;
+    position: -webkit-sticky;
+    top: 0px;
+}
+
+.sidebar_price {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #0085CA;
+}
+
+.sidebar_price sup {
+    font-size: 1.4rem;
+    top: -0.5em;
+}
+
+.sidebar_price sub {
+    font-size: 1.4rem;
+    bottom: 0em;
+    color: #AFAFAF;
+}
+
+.pricing_right_sidebar .btn_primary {
+    margin-bottom: 1.5rem;
+}
+
+.pricing_right_sidebar p {
+    color: #000;
+    font-weight: 600;
+}
+
+.pricing_right_sidebar .btn_primary {
+    width: 100%;
+    padding: 12px 0px;
+    font-size: 14px;
+}
+
+.pricing_right_sidebar .btn_link_blue {
+    font-size: 1rem;
+}
+
+.mobile_check_btn_container {
+    display: block;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.mobile_pricing_container {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.mobile_pricing {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.mobile_starting {
+    color: #000;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.mobile_price {
+    color: #0085CA;
+    font-size: 2.2rem;
+}
+
+.mobile_price sup {
+    font-size: 1.2rem;
+    top: -0.5em;
+}
+
+.mobile_price sub {
+    font-size: 1rem;
+    bottom: 0em;
+    color: #AFAFAF;
+}
+
+.btn_mobile_check {
+    background: #0085CA;
+    color: #fff;
+    font-size: 18px;
+    padding: 11px 40px!important;
+
+}
+
+.btn_mobile_check:hover {
+    background-color: #015F90;
+    color: #fff!important;
+}
+
+/*
+Review widget
+
+Stamped.io widget overrides free font from Awesome on all fa- classes
+*/
+
+
+/*
+
+ */
+
+.lift_tickets_container .btn_link_blue {
+    width: 100%;
+    display: block;
+    color: #0085CA!important;
+    text-decoration: underline;
+}
+
+.lift_tickets_container .btn_link_blue:hover {
+    color: #015F90!important;
+    text-decoration: none;
+}
+
+.link_separator {
+    display: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.partnership_container {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+}
+
+.partnership {
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.partnership p {
+    line-height: 45px;
+    margin-bottom: 0rem;
+    padding-right: 10px;
+}
+
+.partnership img {
+    width: 45px;
+    height: 45px;
+}
+
+.white {
+    background: #fff!important;
+}
+.no_shadow {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25)!important;
+}
+#product_image {
+    min-height: 200px;
+}
+.v2 {
+    max-height: 260px;
+}
+.product_main_info h2 {
+    font-size: 1.2rem;
+}
+.product_main_info p {
+    font-size: 0.9rem;
+}
+
+#sidebar {
+    top: 60px;
+}
+.l2 .link .btn_link_blue {
+    font-size: 0.9rem;
+}
+.l2 .links .link,
+.l2 .link .btn_link_blue {
+}
+
+.product_main_info .l2 .link {
+    padding-bottom: 0px;
+    width: auto!important;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+
+#stamped-main-widget {
+    margin: 0px!important;
+}
+
+div.stamped-container[data-widget-style=standard] {
+    margin: 0px auto!important;
+}
+.orange-bg {
+    background: #EE7E43;
+}
+.product_main_info .link_separator {
+    font-size: 1.1rem;
+    padding-right: 5px;
+    display: block;
+}
+
+#product_info .btn_read_more_blue {
+    font-size: 14px;
+}
+
+.faqs .col-sm-12 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.btn_read_more_blue,
+.more_faq {
+    background: #fff;
+    font-size: 14px;
+    padding: 0;
+    border: 0;
+}
+
+.more_faq {
+    color: #0085CA;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.more_faq:hover {
+    color: #015F90;
+    text-decoration: none;
+}
+
+.home .fine_print h2 {
+    text-align: center;
+}
+
+.fine_print p {
+    margin-bottom: 0px;
+}
+
+#additional_faq,
+#hide_paragraph {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s linear;
+}
+
+.show_faq {
+    height: auto!important;
+}
+
+#hide_paragraph {
+    margin-bottom: 0px;
+}
+
+.show_paragraph {
+    height: auto!important;
+    margin-bottom: 10px!important;
+}
+
+.btn_more_container .btn_read_more_blue {
+    margin-left: auto;
+}
+
+
+@media (min-width: 576px) {
+    .margin_bottom {
+        margin-bottom: 30px;
+    }
+    .box,
+    .widget_box {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+    .product_main_info .links {
+        padding: 0px 30px;
+    }
+    .mobile_next_line {
+        display: none;
+    }
+    .city_card_info .left,
+    .city_card_info .right {
+        font-size: 2rem;
+        padding: 15px 30px;
+    }
+    .city_card_info i {
+        font-size: 14px;
+        transform: translateY(-1px);
+    }
+    .reviews_count {
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+    .review {
+
+    }
+    .top_quote {
+        left: 25px;
+    }
+    .bottom_quote {
+        right: 25px;
+    }
+    .gallery_half {
+        width: 50%;
+        height: 250px;
+    }
+    .gallery_half_left {
+        padding: 0 15px;
+    }
+    .photo_full_container {
+        padding: 15px 15px 0px 15px;
+    }
+    .photo_half_container {
+        padding: 0px 15px 15px 15px;
+    }
+    .pickup_location {
+        padding: 0 30px;
+    }
+    .pickup_location_left,
+    .pickup_location_right {
+        padding: 0 30px;
+    }
+    .other_experience_info {
+        padding: 30px;
+    }
+    .btn_primary {
+        padding: 12px 40px;
+    }
+    .btn_city {
+        margin-right: 30px;
+        padding: 8px 0px;
+    }
+    .city_trip_image {
+        height: 250px;
+    }
+    .accordion {
+    }
+    .slider_overlay p {
+        font-size: 14px;
+        padding-top: 8px;
+    }
+    .l2 .link .btn_link_blue {
+        font-size: 1rem;
+    }
+    .slider_overlay {
+        height: 40px;
+    }
+    .slider_overlay_gradient {
+        bottom: 40px;
+    }
+    .btn_city_col .btn_city {
+        font-size: 18px;
+    }
+    .city_card {
+        margin: 0 auto 30px auto;
+    }
+}
+@media (min-width: 768px) {
+    .mobile_text_center {
+        text-align: left;
+    }
+    .incentive_list_container {
+        padding-bottom: 0px;
+    }
+    .gallery_half {
+        height: 300px;
+    }
+    .other_experience .title {
+        font-size: 1.2rem;
+    }
+    .trip_info_location,
+    .trip_info_elevation {
+        width: 50%;
+    }
+    .other_experience_image {
+        height: 250px;
+    }
+    .other_experience p {
+        font-size: 1rem;
+    }
+    .city_trip_image {
+        height: 300px;
+    }
+    .link_separator {
+        font-size: 1.5rem;
+    }
+    .lift_tickets_container .btn_link_blue {
+        font-size: 1.2rem;
+    }
+    .other_experience .cu .price {
+        font-size: 3rem;
+    }
+    .other_experience .cu .price sup {
+        font-size: 1.2rem;
+        top: -.9em;
+    }
+    .newsletter p {
+        font-size: 1.2rem;
+    }
+    .slider_overlay p {
+        font-size: 16px;
+    }
+    .product_main_info h2 {
+        font-size: 1.4rem;
+    }
+    .l2 .link .btn_link_blue {
+        font-size: 0.9rem;
+    }
+    .product_main_info .l2 .link {
+    }
+    #product_image {
+        min-height: inherit;
+    }
+    .city_trip_image_container {
+        width: 40%;
+    }
+    .city_trip_image {
+        height: 100%;
+    }
+    .city_trip_info {
+        width: 60%;
+    }
+    .city_trip_card {
+    }
+    .city_trip_info {
+        padding: 15px 30px;
+    }
+    .lift_tickets_container .btn_link_blue,
+    .link_separator {
+        display: inline-block;
+    }
+    .lift_tickets_container .btn_link_blue {
+        width: auto;
+    }
+    .btn_city_col {
+        width: 25%;
+        margin-bottom: 15px;
+    }
+    .btn_city_col .btn_city {
+        font-size: 14px;
+    }
+    .btn_city_container .btn_city_row {
+        margin: 0 -15px 15px -15px;
+    }
+    .not_available p {
+        font-size: 1.4rem;
+    }
+    .city_card_image {
+        height: 250px;
+    }
+}
+@media (min-width: 992px) {
+    .hero_container {
+        height: 50vh;
+    }
+    .gallery_half {
+        height: 400px;
+    }
+    .other_experience .title {
+        font-size: 1.5rem;
+    }
+    .product_main_info .link {
+        width: auto;
+        padding-right: 30px;
+    }
+    .product_main_info .btn_link_blue {
+        font-size: 1rem;
+    }
+    .fa_share_free,
+    .fa_share_free:before {
+    }
+    .incentive_icon i {
+        font-size: 24px;
+    }
+    .incentive_text p {
+        font-size: 18px;
+    }
+    .trip_info_title,
+    .trip_info_description,
+    .trip_info_icon_container {
+    }
+    .btn_city {
+    }
+    .btn_city_trip_card {
+        width: auto;
+        padding: 14px 90px;
+    }
+    .pricing_right_sidebar_container {
+        display: block;
+    }
+    .mobile_check_btn_container {
+        display: none;
+    }
+    .description,
+    .resort,
+    .btn_link_blue,
+    .btn_link_orange {
+        font-size: 1.5rem;
+    }
+    .other_experience_image {
+        height: 300px;
+    }
+    .pickup_location_left {
+        width: 10%;
+    }
+    .pickup_location_right {
+        width: 90%;
+    }
+    .newsletter p {
+    }
+    .trip_info_title h2 {
+        font-size: 1.5rem;
+    }
+}
+.hidden {
+    overflow: hidden;
+}

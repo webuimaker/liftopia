@@ -1,0 +1,7 @@
+<div class="autoplay" id="photos">
+	{% for photo in page.photos %}
+		<div>
+			<div class="slider_image" id="slider_image_{{forloop.index}}" style="background-image:url({{ photo.image }})"> </div>
+		</div>
+	{% endfor %}
+</div>

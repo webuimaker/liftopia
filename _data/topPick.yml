@@ -1,0 +1,25 @@
+cityCards:
+ - 
+   image:  ../img/city/city_1.png
+   city: Boston
+   stars: 4
+   reviewsCount: 903
+   price: 129
+ - 
+   image:  ../img/city/city_3.png
+   city: Boston
+   stars: 5
+   reviewsCount: 903
+   price: 129
+ - 
+   image:  ../img/city/city_2.png
+   city: Boston
+   stars: 4
+   reviewsCount: 903
+   price: 129
+ - 
+   image:  ../img/city/city_4.png
+   city: Boston
+   stars: 5
+   reviewsCount: 903
+   price: 129

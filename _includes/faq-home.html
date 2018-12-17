@@ -1,0 +1,43 @@
+<div class="col-sm-12 faqs">
+	<h2 class="text-center mb-0">Frequently Asked Questions</h2>
+	<div class="row">
+		<div class="col-sm-12">
+			{% for faq in site.data.faq-home.faqs %}
+			
+				{% if  forloop.index <= 5 %}
+					<button class="accordion">
+						{{ faq.question }} 
+					<div class="accordion_arrow"><i class="fas fa-angle-down"></i></div>
+					</button>
+					<div class="panel">
+						<p>{{ faq.answer }}</p>
+					</div>
+				{% endif %}
+				{% if  forloop.index  ==  6 %}
+					<div class="c" id="additional_faq">
+				{% endif %}
+				{% if  forloop.index  > 5 %}
+					<button class="accordion">
+						{{ faq.question }}
+						<div class="accordion_arrow"><i class="fas fa-angle-down"></i></div>
+					</button>
+					<div class="panel">
+						<p>{{ faq.answer }}</p>
+					</div>
+				{% endif %}
+				{% if  forloop.last and  forloop.length  >=  5 %}
+					</div>
+					
+						<button class="more_faq float-right"><span>More FAQs</span></button>
+					
+				{% endif %}
+				
+				
+				
+			{% endfor  %}	
+		
+			
+			
+		</div>
+	</div>
+</div>

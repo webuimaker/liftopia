@@ -1,0 +1,55 @@
+
+<!-- Scripts for this template -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript">
+    $('.autoplay').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
+</script>
+
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', 'b3876605-46eb-41bb-9619-bbbc934d8ab9')</script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            this.classList.toggle("arrow_active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+<script type="text/javascript">
+    let className = "show_faq";
+    let id = "#additional_faq";
+    let button = ".more_faq"
+    $(button).click(function() {
+        if ($(id).hasClass(className)) {
+            $(id).removeClass(className);
+            $("span", this).text("More FAQs");
+        } else {
+            $(id).addClass(className);
+            $("span", this).text("Hide");
+        }
+    });
+</script>
+
+
+
+</body>
+</html>

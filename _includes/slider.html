@@ -1,0 +1,11 @@
+<div class="slider_container zc">
+	<div class="autoplay">
+		{% for slider in site.data.slider-home.images %}
+			<div><div class="slider_image" id="slider_image_{{forloop.index}}" style="background-image:url({{.slider}})"></div></div>
+		{% endfor  %}
+	</div>
+	<div class="slider_overlay_gradient position-absolute zm"></div>
+	<div class="slider_overlay position-absolute zm">
+		{{site.data.slider-home.overlayText }}
+	</div>
+</div>

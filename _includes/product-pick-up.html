@@ -1,0 +1,20 @@
+<div class="col-sm-12" id="pickUp">
+	<h2>Pick-up Locations</h2>
+	{% for pickup in page.pickUpLocation %}
+		<div class="row pickup_location_container">
+			<div class="pickup_location_left">
+				<p>{{forloop.index}}</p>
+			</div>
+			<div class="pickup_location_right">
+				<div class="row">
+					<div class="pickup_location">
+						<p>{{ pickup.name}}</p>
+						<a class="btn_link_blue" href="{{ pickup.link}}">{{ pickup.address}}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	{% endfor %}
+	
+</div>

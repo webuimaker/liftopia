@@ -1,0 +1,57 @@
+cities:
+ - 
+   market:  CA
+   concept: Ski Bus
+   city: Los Angeles
+ - 
+   market:  CA
+   concept: Ski Bus
+   city: San Jose
+ - 
+   market:  CANADA
+   concept: Ski Bus
+   city: Toronto
+ - 
+   market:  CO
+   concept: Ski Bus
+   city: Denver/Boulder
+ - 
+   market:  CT
+   concept: Ski Bus
+   city: Hartford/New Haven
+ - 
+   market:  MD
+   concept: Ski Bus
+   city: Baltimore
+ - 
+   market:  MI
+   concept: Ski Bus
+   city: Detroit
+ - 
+   market:  MN
+   concept: Ski Bus
+   city: Minneapolis/St. Paul
+ - 
+   market:  NJ
+   concept: Ski Bus
+   city: Hoboken/Jersey City
+ - 
+   market:  PA
+   concept: Snow Tubing
+   city: Philadelphia
+ - 
+   market:  WA
+   concept: Ski Bus
+   city: Seattle
+ - 
+   market:  WA
+   concept: Ski Bus
+   city: New York
+ - 
+   market:  WA
+   concept: Ski Bus
+   city: Chicago
+ - 
+   market:  WA
+   concept: Ski Bus
+   city: Boston

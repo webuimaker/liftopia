@@ -1,0 +1,137 @@
+<div class="main">
+    <div class="fixed-bottom zc mobile_check_btn_container">
+        <div class="mobile_pricing_container">
+            <div class="mobile_pricing">
+                <span class="mobile_starting">Starting at</span>
+                <span class="mobile_price">
+                    <sup>$</sup>{{page.lowestPrice}}<sub>/person</sub>
+                </span>
+            </div>
+            <a class="btn btn_mobile_check" href="https://www.peek.com/s/311f5785-a9af-4cef-af09-5a825f001fea/80YY">Check Availability</a>
+        </div>
+    </div>
+    <div class="container-fluid position-relative z101">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-9 pt-0 pb-0 main_content">
+                    <div class="row">
+                        <div class="col-sm-12 pt-0 pb-0" id="product_info">
+                            <div class="box">
+
+                                <div class="col-sm-12 product_main_info">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6 pb-0" id="product_image" title="{{page.heroImage}}" 
+										style="background-image:url({{page.heroImage}})">
+                                            <div class="category {{ page.badgeColor }}">{{ page.badgeText}} </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 l2 pb-0">
+                                            <h2>{% if page.productName %} {{ page.productName }} {% else %}{{ page.title }} {% endif %}</h2>
+                                            <p class="mb-0 stars">
+                                                <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{page.stampedID}}"></span>
+                                            </p>
+                                            <p class="product_description">
+                                                 {% if page.productDescription %} {{ page.productDescription }} {% else %}{{ page.description }} {% endif %}
+                                            </p>
+                                            <div class="row links">
+                                                <div class="link">
+                                                    <a class="btn_link_blue" href="#pickUp">
+                                                        Pick-up Locations
+                                                    </a>
+                                                </div>
+                                                <span class="link_separator">|</span>
+                                                <div class="link">
+                                                    <a class="btn_link_blue" href="#reviews">
+                                                        Reviews
+                                                    </a>
+                                                </div>
+                                                <span class="link_separator">|</span>
+                                                <div class="link last_link">
+                                                    <a class="btn_link_blue" href="#photos">
+                                                        Photos
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 experience">
+                                    <h2>Experience</h2>
+                                    {{ page.experience }}
+                                    <div class="btn_more_container">
+                                        <button class="btn_read_more_blue" id="experience_read_more"><span>Read More</span></button>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 partnership_container">
+                                    <div class="partnership">
+                                        <p>Presented in partnership with</p>
+                                        <img src="img/sa-logo.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6 incentive_list_container">
+                                            <h2 class="mb-10">What You’ll Get</h2>
+                                            <div class="incentive_list trip_include">
+												{% for inclusion in page.inclusions %}
+													{% if inclusion.binary == "true" %}
+														<div class="incentive">
+															<div class="incentive_icon">
+																<i class="{{ inclusion.icon }}"></i>
+															</div>
+															<div class="incentive_text">
+																<p>{{ inclusion.text }}</p>
+															</div>
+														</div>
+													{% endif %}	
+												{% endfor %}
+											
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 incentive_list_container">
+                                            <h2 class="mb-10">Optional</h2>
+                                            <div class="incentive_list trip_exclude">
+												{% for option in page.options %}
+													{% if option.binary == "true" %}
+														<div class="incentive">
+															<div class="incentive_icon">
+																<i class="{{ option.icon }}"></i>
+															</div>
+															<div class="incentive_text">
+																<p>{{ option.text }}</p>
+															</div>
+														</div>
+													{% endif %}	
+												{% endfor %}
+											
+                                              
+												
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {% include product-pick-up.html %}
+                                {% include product-faqs.html %}
+                                {% include reviews.html %}
+								{% include additional-information.html %}
+								{% include cross-sell.html %}
+								{% include cross-sell-exp.html %}
+								{% include product-photo.html %}
+								{% include product-fine-print.html %}
+                                
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+				{% include check-availability.html %}
+            </div>
+        </div>
+    </div>
+ </div>

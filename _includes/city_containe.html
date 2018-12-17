@@ -1,0 +1,17 @@
+<div class="col-sm-12 text-center">
+	<h1 class="mb-0">Access the Mountains</h1>
+</div>
+<div class="col-sm-12 btn_city_container">
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="row btn_city_row">
+				{% for city in site.data.cities.cities %}
+					{%- assign cityUrl = city.city | lstrip | downcase | replace: '/', '-'   | replace: ' ', '-'    -%}
+					<div class="btn_city_col">
+						<a class="btn btn_city" href="{{ cityUrl }}">{{ city.city }} </a>
+					</div>
+				{% endfor  %}
+			</div>
+		</div>
+	</div>
+</div>

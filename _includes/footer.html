@@ -1,0 +1,38 @@
+<div class="main">
+<div class="container-fluid position-relative" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5>About</h5>
+					{% for aboutLink in site.footnav.about %}
+						<a href="{{aboutLink.url}}">  {{aboutLink.title}}</a>
+                    {% endfor %}
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5>Social Media</h5>
+					{% for social in site.footnav.socialMedia %}
+						<a href="{{social.url}}">  {{social.title}}</a>
+                    {% endfor %}
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5>More</h5>
+					{% for more in site.footnav.mores %}
+						<a href="{{more.url}}">  {{more.title}}</a>
+                    {% endfor %}
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <h5>Customer Support</h5>
+					{% for support in site.footnav.customerSupport %}
+						<a href="{{support.url}}">  {{support.title}}</a>
+                    {% endfor %}
+                    
+                </div>
+                <div class="col-sm-12 logos">
+                    <img width="150" src="{{site.logo}}">
+                    <img width="60" src="{{site.footnav.saLogo}}">
+                </div>
+                <p class="copyright">{{site.footnav.copyright}}</p>
+            </div>
+        </div>
+    </div>
+    </div>

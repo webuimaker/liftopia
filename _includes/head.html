@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>{% if page.title %}{{ page.title }} | Liftopia{% else %}{{ site.title }}{% endif %}</title>
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+	
+	<!-- Open Graph Data  -->
+	<meta property="og:title" content="{% if page.og-title %}{{ page.og-title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ page.title }}{% endif %}">
+	<meta property="og:type" content="{% if page.og-type %}{{page.og-type}}{% else %}website{% endif %}">
+	<meta property="og:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+	<meta property="og:image" content="{% if page.hero.url %}{{ page.hero.url | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+	<meta property="og:description" content="{% if page.og-description %}{{ page.og-description | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ page.description }}{% endif %}">
+	<meta property="og:site_name" content="{{ site.name }}">
+	<meta property="og:locale" content="{{ site.locale }}">
+
+	{% if site.facebook %}
+	  {% if site.facebook.admins %}
+		<meta property="fb:admins" content="{{ site.facebook.admins }}">
+	  {% endif %}
+	  {% if site.facebook.publisher %}
+		<meta property="article:publisher" content="{{ site.facebook.publisher }}">
+	  {% endif %}
+	  {% if site.facebook.app_id %}
+		<meta property="fb:app_id" content="{{ site.facebook.app_id }}">
+	  {% endif %}
+	{% endif %}
+
+	{% if page.date %}
+	  <meta property="article:author" content="https://www.facebook.com/{{ site.author.facebook }}">
+	  <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
+	  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+	  {% for post in site.related_posts limit:3 %}
+		<meta property="og:see_also" content="{{ post.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+	  {% endfor %}
+	{% endif %}
+
+	{% if page.categories %}
+	  {% for category in page.categories limit:1 %}
+	  <meta property="article:section" content="{{ category }}">
+	  {% endfor %}
+	{% endif %}
+
+	{% if page.tags %}
+	  {% for tag in page.tags %}
+	  <meta property="article:tag" content="{{ tag }}">
+	  {% endfor %}
+	{% endif %}
+	<!-- Optimizing for search engine-->
+	
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ site.description }}{% endif %}">
+	{% if page.robots %}
+	  <meta name="robots" content="{{ page.robots }}">
+	{% endif %}
+
+	<link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+
+	{% if paginator.previous_page %}
+	  <link rel="prev" href="{{ paginator.previous_page_path | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+	{% endif %}
+
+	{% if paginator.next_page %}
+	  <link rel="next" href="{{ paginator.next_page_path | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+	{% endif %}
+	
+	<!-- Twitter Cards Data -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@{{ site.twitter.username | replace:'@','' }}">
+	{% if page.date %}
+	  <meta name="twitter:creator" content="@{{ site.author.twitter | replace:'@','' }}">
+	{% endif %}
+	<meta name="twitter:title" content="{% if page.twitter-title %}{{ page.twitter-title | smartify | strip_html | strip_newlines | escape_once }}{% else %}{{ page.title }}{% endif %}">
+	<meta name="twitter:description" content="{% if page.twitter-description %}{{ page.twitter-description | markdownify | strip_html | strip_newlines | truncate: 160 | escape_once }}{% else %}{{ page.description }}{% endif %}">
+	<meta name="twitter:image" content="{% if page.hero.url %}{{ page.hero.url | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.logo | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+	<meta name="twitter:url" content="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+
+	<!-- end of Twitter cards -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff5a45">
+    <meta name="apple-mobile-web-app-title" content="Rajewski">
+    <meta name="application-name" content="Rajewski">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P52LDS3');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom_bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/index_reviews.css" rel="stylesheet">
+</head>
+<body>

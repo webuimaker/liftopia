@@ -1,0 +1,61 @@
+<div class="main hidden">
+    <div class="container-fluid position-relative zc city_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 pt-0 pb-0">
+                    <div class="box">
+                        <div class="col-sm-12 pb-0 text-center">
+                            <h2>{{page.cityName}} Experiences </h2>
+                            <p>{{page.pageDescription}}</p>
+                        </div>
+						
+						{% for product in page.prdoucts %}
+							<div class="city_trip_card {% if product.offerStatus == 'disabled'  %}disabled_offer {% else %} {% endif %}">
+								<div class="city_trip_image_container">
+									<div class="city_trip_image" id="city_trip_image_{{forloop.index}}" title="{{ product.alText}}" style="background-image:url({{product.photo}})">
+										<div class="category {{.product.badgeColor}}">{{ product.badgeText}}</div>
+										<div class="trip_info_price">
+											<span class="secondary_color">From </span>
+											<span class="trip_price">
+												<sup>$</sup>{{ product.fromPriceRound }}{% if product.fromPricefloat %}<sub>.{{product.fromPricefloat}}</sub>{% endif %}
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="city_trip_info">
+									<div class="trip_info_title">
+										<h2>{{ product.productName }}</h2>
+										<p id="{{ product.stampedID }}" style="display:none;">{{ product.stampedID }}</p>
+										<p class="mb-0 stars">
+											{% for i in (1..product.stars) %}
+												<i class="fas fa-star"></i>
+											{% endfor  %}
+											<span class="reviews_count"> {{ product.reviews }} reviews</span>
+										</p>
+									</div>
+									<div class="trip_info_description">
+										<div class="trip_info_icon_container">
+											<div class="trip_info_location">
+												<a class="btn_link_blue" href="{{product.location}}">
+													<i class="fas fa-map-marker-alt"></i>
+													<span>{{product.location}}</span>
+												</a>
+											</div>
+										</div>
+										<p>{{product.description}}</p>
+									</div>
+									<div class="trip_info_btn_container">
+										<a class="btn btn_city_trip_card" href="{{product.url}}">More Info</a>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+
+                        {% include subscribe-form.html %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

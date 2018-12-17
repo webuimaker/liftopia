@@ -1,0 +1,49 @@
+.fa_free,
+.fa_free:before,
+.fa-angle-down,
+.fa-angle-down:before {
+    font-family: "Font Awesome 5 Free"!important;
+    font-weight: 900!important;
+}
+
+.fa_share_free,
+.fa_share_free:before {
+    color: #0085CA!important;
+}
+
+.fa-star,
+.fa-star-checked,
+.fa-star-half-o,
+.fa-star-o,
+.stamped-fa-star,
+.stamped-fa-star-checked,
+.stamped-fa-star-half-o,
+.stamped-fa-star-o {
+    color: #FF8A00;
+}
+
+.stamped-summary-photos.stamped-summary-photos-container,
+.stamped-container .stamped-review-image {
+    display: none!important;
+}
+
+.accordion_arrow .fa-angle-down:before {
+    margin-right: 0em!important;
+}
+
+.stamped-reviews .stamped-review {
+    display: none;
+}
+
+.stamped-reviews .stamped-review:nth-child(-n+2) {
+    display: block!important;
+}
+
+div[data-widget-style=standard] .stamped-header {
+    display: none;
+}
+
+#HSBeaconFabButton {
+    bottom: 20px!important;
+    right: 20px!important;
+}

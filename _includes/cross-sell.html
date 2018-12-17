@@ -1,0 +1,11 @@
+<div class="col-sm-12 lift_tickets_container text-center">
+	<h2 class="mb-0">Just Looking for lift tickets?</h2>
+	<div class="row">
+		<div class="col-sm-12 pt-0 pb-0">
+			{% for ticket in page.crossSell %}
+				<a class="btn_link_blue regular_font" href="{{ ticket.resortLink }}">{{ ticket.resortName }} Lift Tickets</a>
+				<span class="link_separator" {% if forloop.last %} style="display:none" {% endif %}>|</span>
+			{% endfor %}
+		</div>
+	</div>
+</div>

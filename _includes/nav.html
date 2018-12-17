@@ -1,0 +1,29 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{site.GoogleTagManager}}"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="mobile_nav_container">
+        <!--<a class="navbar-brand" href="https://experiences.liftopia.com"><img width="120" src="img/logo.png"></a> -->
+        <a class="navbar-brand" href="/"><img width="120" src="{{site.logo}}"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span>Menu</span><i class="fas fa-caret-down fa_free"></i>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarsExample07">
+            <ul class="navbar-nav ml-auto navbar_desktop">
+				{% for nav in site.navigations %}
+					<li class="nav-item">
+						<a class="nav-link" href="{{nav.url}}">{{nav.title}}</a>
+					</li>
+				{% endfor %}
+            </ul>
+            <ul class="navbar-nav ml-auto navbar_mobile">
+                {% for nav in site.navigations %}
+					<li class="nav-item">
+						<a class="nav-link" href="{{nav.url}}">{{nav.title}}</a>
+					</li>
+				{% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

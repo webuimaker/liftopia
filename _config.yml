@@ -1,0 +1,111 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Liftopia | Liftopia
+email: your-email@example.com
+keywords: >- # Meta Keywords
+title_image: >- # twitter:image
+GoogleTagManager: "GTM-P52LDS3"
+
+name:           "Liftopia"
+description:    "your site description"
+url:            "http://yoursitename.com" # URL of site, include http://, do not include a trailing slash
+baseurl:        "" # does not include hostname
+logo:           /img/logo.png
+#timezone:       your timezone # eg. Asia/Kathmandu
+locale:         your locale language # eg. en_us
+author:
+  facebook:     username # site author facebook page
+  twitter:      username # site author twitter page
+facebook:
+  app_id:       1234 # site facebook app id
+  publisher:    1234 # site facebook page id
+  admins:       1234 # site admin facebook profile id
+twitter:
+  username:     username # site twitter page
+github:
+  username:     username # site github page
+
+### Site Navigations
+navigations: 
+ - 
+  title: "Contact Us"
+  url: "mailto: support@liftopia.com"
+ - 
+  title: "Buy Lift Tickets"
+  url: "https://www.liftopia.com"
+  
+  
+
+### Footer Navigations
+footnav:
+  saLogo: "img/sa-logo.png"
+  copyright: "© 2006-2018 Liftopia, Inc."
+  about:
+    - 
+      title: "About Liftopia"
+      url: "https://about.liftopia.com"
+    - 
+      title: "About Sourced Adventures"
+      url: "https://www.sourcedadventures.com/who-we-are/"
+    - 
+      title: "About Liftopia Experiences"
+      url: "https://experiences.liftopia.com/about-liftopia-experiences"
+  socialMedia:
+    - 
+      title: "Facebook"
+      url: "https://www.facebook.com/liftopia"
+    - 
+      title: "Instagram"
+      url: "https://www.instagram.com/liftopia/"
+    - 
+      title: "Twitter"
+      url: "https://twitter.com/Liftopia"
+  mores:
+    - 
+      title: "Waiver Form"
+      url: "http://www-sourcedadventures-com.exactdn.com/wp-content/uploads/2016/05/Sourced-Adventures-Waiver.pdf"
+    - 
+      title: "Privacy Policy"
+      url: "https://www.liftopia.com/privacy-statement"
+    - 
+      title: "Terms & Conditions"
+      url: "https://www.liftopia.com/terms-of-use"
+  customerSupport:
+    - 
+      title: "1-800-349-0870"
+      url: "tel: 1-800-349-0870"
+    - 
+      title: "Help Center"
+      url: "https://www.sourcedadventures.com/faq/"
+    - 
+      title: "Contact Us"
+      url: "mailto: support@liftopia.com"
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
